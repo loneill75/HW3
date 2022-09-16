@@ -2,6 +2,7 @@
 title: "Lab 2"
 output: GitHub
 date: "2022-09-08"
+group: Victoria Karadimas; Safinaz Ali; Liam O'Neill
 ---
 
 ```{r}
@@ -34,7 +35,7 @@ xtabs(~SEXUAL_ORIENTATION + RECVDVACC + Works_onsite)
 ```
 
 ---
-Comparing birth year and vacinated status.
+Comparing birth year and vaccinated status.
 ---
 ```{r}
 xtabs(~TBIRTH_YEAR + RECVDVACC)
