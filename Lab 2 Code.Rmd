@@ -1,0 +1,41 @@
+---
+title: "Lab 2"
+output: GitHub
+date: "2022-09-08"
+---
+
+```{r}
+restrict1 <- (Household_Pulse_data == 5) | (Household_Pulse_data == "female")
+data_new <- subset(Household_Pulse_data,restrict1)
+```
+
+```{r}
+restrict1 <- (Household_Pulse_data == 5) | (Household_Pulse_data == "male")
+data_new <- subset(Household_Pulse_data,restrict1)
+```
+
+```{r}
+restrict1 <- (Household_Pulse_data == 5) | (Household_Pulse_data == "no did not")
+data_new <- subset(Household_Pulse_data,restrict1)
+```
+
+---
+onsite vs remote work
+---
+```{r}
+xtabs(~works_remote + Works_onsite)
+```
+
+---
+Sexual Orientation + Vacc + works on site
+---
+```{r}
+xtabs(~SEXUAL_ORIENTATION + RECVDVACC + Works_onsite)
+```
+
+---
+Comparing birth year and vacinated status.
+---
+```{r}
+xtabs(~TBIRTH_YEAR + RECVDVACC)
+```
